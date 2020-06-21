@@ -16,20 +16,20 @@ class Iterator {
             it=node;
         }
         void operator=(Node<T>* node){
-		    it=node;
+	    it=node;
     	}
     	Node<T>* operator++(){
-    		it= it->getNext();
+    	    it= it->getNext();
             return it;
     	}
     	T operator*(){
-    		return it->getElem();
+    	    return it->getElem();
     	}
     	bool operator==(Node<T>* node){
-    		return it==node;
+    	    return it==node;
     	}
     	bool operator!=(Node<T>* node){
-    		return it!=node;
+    	    return it!=node;
     	}
 };
 
